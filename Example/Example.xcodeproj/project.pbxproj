@@ -13,6 +13,8 @@
 		1856982124F5E04300526A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856982024F5E04300526A3C /* Assets.xcassets */; };
 		1856982424F5E04300526A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856982224F5E04300526A3C /* LaunchScreen.storyboard */; };
 		1856982724F5E04300526A3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856982624F5E04300526A3C /* main.m */; };
+		1856985224F5E6BE00526A3C /* WKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856985124F5E6BE00526A3C /* WKTabBarController.m */; };
+		1856989024F658E700526A3C /* IOSDevelopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1856988F24F658E700526A3C /* IOSDevelopKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		1856982324F5E04300526A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1856982524F5E04300526A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1856982624F5E04300526A3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1856985024F5E6BE00526A3C /* WKTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKTabBarController.h; sourceTree = "<group>"; };
+		1856985124F5E6BE00526A3C /* WKTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKTabBarController.m; sourceTree = "<group>"; };
+		1856988F24F658E700526A3C /* IOSDevelopKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSDevelopKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/IOSDevelopKit-ckwhjqfgofwliyhlfiwfhbbpjlqa/Build/Products/Debug-iphonesimulator/IOSDevelopKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1856989024F658E700526A3C /* IOSDevelopKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,10 +64,12 @@
 		1856981624F5E04200526A3C /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				1856988F24F658E700526A3C /* IOSDevelopKit.framework */,
+				1856985624F63CFE00526A3C /* Main */,
 				1856981724F5E04200526A3C /* AppDelegate.h */,
 				1856981824F5E04200526A3C /* AppDelegate.m */,
-				1856981A24F5E04200526A3C /* ViewController.h */,
-				1856981B24F5E04200526A3C /* ViewController.m */,
+				1856985024F5E6BE00526A3C /* WKTabBarController.h */,
+				1856985124F5E6BE00526A3C /* WKTabBarController.m */,
 				1856981D24F5E04200526A3C /* Main.storyboard */,
 				1856982024F5E04300526A3C /* Assets.xcassets */,
 				1856982224F5E04300526A3C /* LaunchScreen.storyboard */,
@@ -69,6 +77,31 @@
 				1856982624F5E04300526A3C /* main.m */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		1856985624F63CFE00526A3C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1856985B24F6466700526A3C /* View */,
+				1856985A24F6465C00526A3C /* Model */,
+				1856981A24F5E04200526A3C /* ViewController.h */,
+				1856981B24F5E04200526A3C /* ViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1856985A24F6465C00526A3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1856985B24F6466700526A3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1856981C24F5E04200526A3C /* ViewController.m in Sources */,
+				1856985224F5E6BE00526A3C /* WKTabBarController.m in Sources */,
 				1856982724F5E04300526A3C /* main.m in Sources */,
 				1856981924F5E04200526A3C /* AppDelegate.m in Sources */,
 			);

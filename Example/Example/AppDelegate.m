@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import <IOSDevelopKit/AxcAE_TabBarItem.h>
+#import "WKTabBarController.h"
+#import "Main/ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,83 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    /*AxcAE_TabBarConfigModel *homeModel = [AxcAE_TabBarConfigModel new];
+    homeModel.itemTitle = @"首页";
+    homeModel.normalImageName = @"homePage";
+    homeModel.selectImageName = @"homePage_select";
+    homeModel.normalColor = [UIColor redColor];
+    homeModel.selectColor = [UIColor greenColor];
+    
+    AxcAE_TabBarConfigModel *categoryModel = [AxcAE_TabBarConfigModel new];
+    categoryModel.itemTitle = @"分类";
+    categoryModel.normalImageName = @"homePage";
+    categoryModel.selectImageName = @"homePage_select";
+    categoryModel.normalColor = [UIColor redColor];
+    categoryModel.selectColor = [UIColor greenColor];
+    
+    AxcAE_TabBarConfigModel *smallModel = [AxcAE_TabBarConfigModel new];
+    smallModel.itemTitle = @"发布";
+    smallModel.normalImageName = @"homePage";
+    smallModel.selectImageName = @"homePage_select";
+    smallModel.normalColor = [UIColor redColor];
+    smallModel.selectColor = [UIColor greenColor];
+    
+    AxcAE_TabBarConfigModel *hotModel = [AxcAE_TabBarConfigModel new];
+    hotModel.itemTitle = @"热点";
+    hotModel.normalImageName = @"homePage";
+    hotModel.selectImageName = @"homePage_select";
+    hotModel.normalColor = [UIColor redColor];
+    hotModel.selectColor = [UIColor greenColor];
+    
+    AxcAE_TabBarConfigModel *meModel = [AxcAE_TabBarConfigModel new];
+    meModel.itemTitle = @"我的";
+    meModel.normalImageName = @"homePage";
+    meModel.selectImageName = @"homePage_select";
+    meModel.normalColor = [UIColor redColor];
+    meModel.selectColor = [UIColor greenColor];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds ];
+    
+    
+    
+    WKTabBarController* tabbar = [[WKTabBarController alloc]init];
+    WKTabBarConfiguration* config = [[WKTabBarConfiguration alloc]init];
+    
+    config.itemTitle = @"标题";
+    
+   
+    
+//    vc.view.backgroundColor = [UIColor redColor];
+    NSArray <NSDictionary *>*VCArray =
+    @[@{
+          @"vc":vc,//控制器
+          @"model":homeModel,//正常图标
+          },
+      @{@"vc":[UIViewController new],
+        @"model":categoryModel
+        },
+      @{@"vc":[UIViewController new],
+        @"model":smallModel
+        },
+      @{@"vc":[UIViewController new],
+        @"model":hotModel
+        },
+      @{@"vc":[UIViewController new],
+        @"model":meModel
+        }
+      ];
+    [tabbar addChildViewControllers:VCArray];
+    
+    
+    
+//    [self.window setRootViewController:tabbar];
+     */
+//     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    
+    ViewController *vc = [[ViewController alloc]init];
+    self.window.rootViewController =vc;
+    [self.window makeKeyWindow];
     return YES;
 }
 
